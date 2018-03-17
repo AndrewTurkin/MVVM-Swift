@@ -11,23 +11,26 @@ import UIKit
 class MessagingViewController: UITableViewController {
     var viewModel: MessangingViewModel!
     let DefaultCellId = "DefaultCellId"
+    let LoadMoreDataCellId = "LoadMoreDataCellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: DefaultCellId)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: LoadMoreDataCellId)
         viewModel.delegate = self
         viewModel.fetchMessages()
     }
     
+    // MARK: UITableView conformance
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch viewModel.dataBinder.itemAtIndex(indexPath.row) {
         case .Message(let message):
-            let cell = tableView.dequeueReusableCell(withIdentifier: DefaultCellId, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: DefaultCellId) ??
+                       UITableViewCell(style: .value1, reuseIdentifier: DefaultCellId)
             cell.textLabel?.text = message.text
-            cell.detailTextLabel?.text = message.date.description
+            cell.detailTextLabel?.text = message.date.string(with: "hh:mm:ss")
             return cell
         case .LoadMoreData:
-            let cell = tableView.dequeueReusableCell(withIdentifier: DefaultCellId, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: LoadMoreDataCellId, for: indexPath)
             cell.textLabel?.text = "Loading more data..."
             viewModel.fetchMessages()
             return cell

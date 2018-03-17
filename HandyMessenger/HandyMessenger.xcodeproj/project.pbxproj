@@ -16,6 +16,9 @@
 		49FA6F60205D634100B2C654 /* GroupMessagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA6F5F205D634100B2C654 /* GroupMessagingViewModel.swift */; };
 		49FA6F62205D64C700B2C654 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA6F61205D64C700B2C654 /* Message.swift */; };
 		49FA6F64205D67A000B2C654 /* MockMessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA6F63205D67A000B2C654 /* MockMessagingService.swift */; };
+		49FA6F69205DA6E600B2C654 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FA6F68205DA6E600B2C654 /* user@2x.png */; };
+		49FA6F6B205DA70D00B2C654 /* group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FA6F6A205DA70D00B2C654 /* group@2x.png */; };
+		49FA6F6D205DB09D00B2C654 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA6F6C205DB09D00B2C654 /* Date+Formatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		49FA6F5F205D634100B2C654 /* GroupMessagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMessagingViewModel.swift; sourceTree = "<group>"; };
 		49FA6F61205D64C700B2C654 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		49FA6F63205D67A000B2C654 /* MockMessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessagingService.swift; sourceTree = "<group>"; };
+		49FA6F68205DA6E600B2C654 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "user@2x.png"; path = "../../../../../../Downloads/user@2x.png"; sourceTree = "<group>"; };
+		49FA6F6A205DA70D00B2C654 /* group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "group@2x.png"; path = "../../../../../../Downloads/group@2x.png"; sourceTree = "<group>"; };
+		49FA6F6C205DB09D00B2C654 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		490BB6BE20598DBC006F7A70 /* HandyMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				49FA6F67205DA6DA00B2C654 /* Assets */,
 				490BB6BF20598DBC006F7A70 /* AppDelegate.swift */,
 				490BB6C120598DBC006F7A70 /* MessagingViewController.swift */,
 				490BB6D1205991DA006F7A70 /* MessangingViewModel.swift */,
@@ -72,8 +79,18 @@
 				49FA6F63205D67A000B2C654 /* MockMessagingService.swift */,
 				490BB6C820598DBC006F7A70 /* LaunchScreen.storyboard */,
 				490BB6CB20598DBC006F7A70 /* Info.plist */,
+				49FA6F6C205DB09D00B2C654 /* Date+Formatting.swift */,
 			);
 			path = HandyMessenger;
+			sourceTree = "<group>";
+		};
+		49FA6F67205DA6DA00B2C654 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				49FA6F68205DA6E600B2C654 /* user@2x.png */,
+				49FA6F6A205DA70D00B2C654 /* group@2x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +152,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FA6F6B205DA70D00B2C654 /* group@2x.png in Resources */,
 				490BB6CA20598DBC006F7A70 /* LaunchScreen.storyboard in Resources */,
+				49FA6F69205DA6E600B2C654 /* user@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +167,7 @@
 			files = (
 				490BB6D2205991DA006F7A70 /* MessangingViewModel.swift in Sources */,
 				49FA6F60205D634100B2C654 /* GroupMessagingViewModel.swift in Sources */,
+				49FA6F6D205DB09D00B2C654 /* Date+Formatting.swift in Sources */,
 				490BB6C220598DBC006F7A70 /* MessagingViewController.swift in Sources */,
 				490BB6C020598DBC006F7A70 /* AppDelegate.swift in Sources */,
 				49FA6F5E205D632000B2C654 /* DirectMessagingViewModel.swift in Sources */,

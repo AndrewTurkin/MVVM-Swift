@@ -10,18 +10,16 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let directMessagingVC = MessagingViewController()
         directMessagingVC.viewModel = DirectMessagingViewModel()
-        directMessagingVC.tabBarItem = UITabBarItem(title: "Direct", image: nil, selectedImage: nil)
+        directMessagingVC.tabBarItem = UITabBarItem(title: "Direct", image: UIImage(named: "user"), selectedImage: nil)
         
         let groupMessagingVC = MessagingViewController()
         groupMessagingVC.viewModel = GroupMessagingViewModel()
-        groupMessagingVC.tabBarItem = UITabBarItem(title: "Group", image: nil, selectedImage: nil)
+        groupMessagingVC.tabBarItem = UITabBarItem(title: "Group", image: UIImage(named: "group"), selectedImage: nil)
         
         let tabVC = UITabBarController()
         tabVC.viewControllers = [directMessagingVC, groupMessagingVC]
@@ -41,7 +39,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) { }
 
     func applicationWillTerminate(_ application: UIApplication) { }
-
-
 }
 
