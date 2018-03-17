@@ -8,10 +8,10 @@
 
 import Foundation
 
-class DirectMessagingViewModel: NSObject, MessangingViewModel {
-    var dataBinder: MessagingDataBinder = WritingMessagingDataBinder()
-    var writingBinder: WritingMessagingDataBinder { get{ return dataBinder as! WritingMessagingDataBinder } }
-    var delegate: MessagingViewModelDelegate?
+class DirectMessagingViewModel: HandyMessangerViewModel {
+    var dataBinder: DataBinder = WritingDataBinder()
+    var writingBinder: WritingDataBinder { get{ return dataBinder as! WritingDataBinder } }
+    var delegate: HandyMessangerViewModelDelegate?
     
     func fetchMessages() {
         delegate?.viewModelDidStartUpdate(self)

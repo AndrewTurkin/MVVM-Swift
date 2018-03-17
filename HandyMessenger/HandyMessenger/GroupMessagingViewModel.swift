@@ -8,10 +8,10 @@
 
 import Foundation
 
-class GroupMessagingViewModel: MessangingViewModel {
-    var dataBinder: MessagingDataBinder = WritingMessagingDataBinder()
-    var writingBinder: WritingMessagingDataBinder { get{ return dataBinder as! WritingMessagingDataBinder } }
-    var delegate: MessagingViewModelDelegate?
+class GroupMessagingViewModel: HandyMessangerViewModel {
+    var dataBinder: DataBinder = WritingDataBinder()
+    var writingBinder: WritingDataBinder { get{ return dataBinder as! WritingDataBinder } }
+    var delegate: HandyMessangerViewModelDelegate?
     
     func deleteMessage(_ message: Message) {
         delegate?.viewModelDidStartUpdate(self)

@@ -13,11 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let directMessagingVC = MessagingViewController()
+        let directMessagingVC = HandyMessageViewController()
         directMessagingVC.viewModel = DirectMessagingViewModel()
         directMessagingVC.tabBarItem = UITabBarItem(title: "Direct", image: UIImage(named: "user"), selectedImage: nil)
         
-        let groupMessagingVC = MessagingViewController()
+        let groupMessagingVC = HandyMessageViewController()
         groupMessagingVC.viewModel = GroupMessagingViewModel()
         groupMessagingVC.tabBarItem = UITabBarItem(title: "Group", image: UIImage(named: "group"), selectedImage: nil)
         

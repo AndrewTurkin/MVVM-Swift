@@ -9,12 +9,12 @@
 import Foundation
 
 // contains view conforming interface
-protocol MessagingDataBinder {
+protocol DataBinder {
     var numberOfItems: Int {get}
     func itemAtIndex(_ index: Int) -> RowItem
 }
 
-class WritingMessagingDataBinder: MessagingDataBinder {
+class WritingDataBinder: DataBinder {
     var messages: Set<Message> = Set<Message>()
     var moreDataAvailable: Bool = false
     var numberOfItems: Int {

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class MessagingViewController: UITableViewController {
-    var viewModel: MessangingViewModel!
+class HandyMessageViewController: UITableViewController {
+    var viewModel: HandyMessangerViewModel!
     let DefaultCellId = "DefaultCellId"
     let LoadMoreDataCellId = "LoadMoreDataCellId"
     
@@ -56,12 +56,12 @@ class MessagingViewController: UITableViewController {
     }
 }
 
-extension MessagingViewController: MessagingViewModelDelegate {
-    func viewModelDidStartUpdate(_ viewModel: MessangingViewModel) {
+extension HandyMessageViewController: HandyMessangerViewModelDelegate {
+    func viewModelDidStartUpdate(_ viewModel: HandyMessangerViewModel) {
         // show progress
     }
     
-    func viewModelDidEndUpdate(_ viewModel: MessangingViewModel) {
+    func viewModelDidEndUpdate(_ viewModel: HandyMessangerViewModel) {
         tableView.reloadData()
     }
 }

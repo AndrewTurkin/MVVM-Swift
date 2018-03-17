@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		490BB6C020598DBC006F7A70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB6BF20598DBC006F7A70 /* AppDelegate.swift */; };
-		490BB6C220598DBC006F7A70 /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB6C120598DBC006F7A70 /* MessagingViewController.swift */; };
+		490BB6C220598DBC006F7A70 /* HandyMessagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB6C120598DBC006F7A70 /* HandyMessagerViewController.swift */; };
 		490BB6CA20598DBC006F7A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490BB6C820598DBC006F7A70 /* LaunchScreen.storyboard */; };
-		490BB6D2205991DA006F7A70 /* MessangingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB6D1205991DA006F7A70 /* MessangingViewModel.swift */; };
-		490BB6D420599207006F7A70 /* MessangingDataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB6D320599207006F7A70 /* MessangingDataBinder.swift */; };
+		490BB6D2205991DA006F7A70 /* HandyMessangerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB6D1205991DA006F7A70 /* HandyMessangerViewModel.swift */; };
+		490BB6D420599207006F7A70 /* DataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB6D320599207006F7A70 /* DataBinder.swift */; };
 		49FA6F5E205D632000B2C654 /* DirectMessagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA6F5D205D632000B2C654 /* DirectMessagingViewModel.swift */; };
 		49FA6F60205D634100B2C654 /* GroupMessagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA6F5F205D634100B2C654 /* GroupMessagingViewModel.swift */; };
 		49FA6F62205D64C700B2C654 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA6F61205D64C700B2C654 /* Message.swift */; };
@@ -24,11 +24,11 @@
 /* Begin PBXFileReference section */
 		490BB6BC20598DBC006F7A70 /* HandyMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandyMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490BB6BF20598DBC006F7A70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		490BB6C120598DBC006F7A70 /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
+		490BB6C120598DBC006F7A70 /* HandyMessagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyMessagerViewController.swift; sourceTree = "<group>"; };
 		490BB6C920598DBC006F7A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490BB6CB20598DBC006F7A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		490BB6D1205991DA006F7A70 /* MessangingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessangingViewModel.swift; sourceTree = "<group>"; };
-		490BB6D320599207006F7A70 /* MessangingDataBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessangingDataBinder.swift; sourceTree = "<group>"; };
+		490BB6D1205991DA006F7A70 /* HandyMessangerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyMessangerViewModel.swift; sourceTree = "<group>"; };
+		490BB6D320599207006F7A70 /* DataBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBinder.swift; sourceTree = "<group>"; };
 		49FA6F5D205D632000B2C654 /* DirectMessagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagingViewModel.swift; sourceTree = "<group>"; };
 		49FA6F5F205D634100B2C654 /* GroupMessagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMessagingViewModel.swift; sourceTree = "<group>"; };
 		49FA6F61205D64C700B2C654 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -70,9 +70,9 @@
 			children = (
 				49FA6F67205DA6DA00B2C654 /* Assets */,
 				490BB6BF20598DBC006F7A70 /* AppDelegate.swift */,
-				490BB6C120598DBC006F7A70 /* MessagingViewController.swift */,
-				490BB6D1205991DA006F7A70 /* MessangingViewModel.swift */,
-				490BB6D320599207006F7A70 /* MessangingDataBinder.swift */,
+				490BB6C120598DBC006F7A70 /* HandyMessagerViewController.swift */,
+				490BB6D1205991DA006F7A70 /* HandyMessangerViewModel.swift */,
+				490BB6D320599207006F7A70 /* DataBinder.swift */,
 				49FA6F5D205D632000B2C654 /* DirectMessagingViewModel.swift */,
 				49FA6F5F205D634100B2C654 /* GroupMessagingViewModel.swift */,
 				49FA6F61205D64C700B2C654 /* Message.swift */,
@@ -165,13 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				490BB6D2205991DA006F7A70 /* MessangingViewModel.swift in Sources */,
+				490BB6D2205991DA006F7A70 /* HandyMessangerViewModel.swift in Sources */,
 				49FA6F60205D634100B2C654 /* GroupMessagingViewModel.swift in Sources */,
 				49FA6F6D205DB09D00B2C654 /* Date+Formatting.swift in Sources */,
-				490BB6C220598DBC006F7A70 /* MessagingViewController.swift in Sources */,
+				490BB6C220598DBC006F7A70 /* HandyMessagerViewController.swift in Sources */,
 				490BB6C020598DBC006F7A70 /* AppDelegate.swift in Sources */,
 				49FA6F5E205D632000B2C654 /* DirectMessagingViewModel.swift in Sources */,
-				490BB6D420599207006F7A70 /* MessangingDataBinder.swift in Sources */,
+				490BB6D420599207006F7A70 /* DataBinder.swift in Sources */,
 				49FA6F64205D67A000B2C654 /* MockMessagingService.swift in Sources */,
 				49FA6F62205D64C700B2C654 /* Message.swift in Sources */,
 			);
